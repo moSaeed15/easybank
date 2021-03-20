@@ -1,0 +1,76 @@
+:root {
+  --color-lime-green: #31d35c;
+  --color-dark-blue: #2d314d;
+  --color-bright-cyan: #2bb7da;
+  --color-Grayish-Blue: #ccc;
+  --color-Light-Grayish-Blue: #f3f4f6;
+  --color-light-grey: #fafafa;
+  --color-white: #ffffff;
+  --line: 1px solid var(--color-light-grey);
+}
+$bp-largest: 84em; //1360px
+$bp-large: 78em; //
+$bp-medium: 70em; //1120px
+$bp-small: 62em; //980px
+$bp-xs: 52em; //~850px
+$bp-xxs: 50em; //800px
+$bp-3xs: 46.875em; //800px
+$bp-4xs: 39em; //624px
+$bp-5xs: 33.75em; //540px
+$bp-mobile: 29em; //540px
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $bp-xs) {
+    font-size: 43%;
+  }
+  @media only screen and (max-width: $bp-xxs) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: $bp-3xs) {
+    font-size: 37%;
+  }
+  @media only screen and (max-width: $bp-4xs) {
+    font-size: 34%;
+  }
+  @media only screen and (max-width: $bp-5xs) {
+    font-size: 32%;
+  }
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: var(--color-light-grey);
+  min-height: 100vh;
+}
+.body-container {
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */

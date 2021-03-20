@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 65rem;
+  &__box {
+    flex: 0 0 50%;
+  }
+  &__img {
+    flex: 1;
+  }
+}
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-Light-Grayish-Blue);
+  &__textbox {
+    margin: 5rem 15.5rem;
+    margin-top: 7rem;
+    width: 44rem;
+    @media only screen and (max-width: $bp-largest) {
+      margin: 5rem 13.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin: 5rem 13.5rem;
+    }
+    @media only screen and (max-width: $bp-xs) {
+      margin: 5rem 9rem;
+    }
+    @media only screen and (max-width: $bp-3xs) {
+      margin: 5rem 7rem;
+    }
+    @media only screen and (max-width: $bp-4xs) {
+      margin: 5rem 5rem;
+    }
+    @media only screen and (max-width: $bp-5xs) {
+      margin: 5rem 3.5rem;
+    }
+  }
+  &__content {
+    margin: 0 15.5rem;
+    display: flex;
+    @media only screen and (max-width: $bp-largest) {
+      margin: 5rem 13.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin: 5rem 13.5rem;
+    }
+    @media only screen and (max-width: $bp-xs) {
+      margin: 5rem 9rem;
+    }
+    @media only screen and (max-width: $bp-3xs) {
+      margin: 5rem 7rem;
+    }
+    @media only screen and (max-width: $bp-4xs) {
+      margin: 5rem 5rem;
+    }
+    @media only screen and (max-width: $bp-5xs) {
+      margin: 5rem 3.5rem;
+    }
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  width: 160rem;
+  padding: 5rem 0rem 5rem 15rem;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 5rem 0rem 5rem 13.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 5rem 0rem 5rem 13.5rem;
+  }
+  @media only screen and (max-width: $bp-xs) {
+    padding: 5rem 0rem 5rem 9rem;
+  }
+  @media only screen and (max-width: $bp-3xs) {
+    padding: 5rem 0rem 5rem 7rem;
+  }
+  @media only screen and (max-width: $bp-4xs) {
+    padding: 5rem 0rem 5rem 5rem;
+  }
+  @media only screen and (max-width: $bp-5xs) {
+    padding: 5rem 0rem 5rem 3.5rem;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-dark-blue);
+  min-height: 14rem;
+  max-height: 14rem;
+}
