@@ -13,11 +13,17 @@
     display: flex;
     align-self: stretch;
     align-items: center;
+    @media only screen and (max-width: $bp-mobile) {
+      margin-right: 20rem;
+    }
     &--link {
       text-decoration: none;
       margin: 0 1.2rem;
       font-size: 1.3rem;
       color: #7c7c7c;
+      @media only screen and (max-width: $bp-mobile) {
+        margin: 0 2rem;
+      }
       &:hover {
         margin-top: 2.5rem;
         padding-bottom: 2.7rem;
@@ -48,6 +54,9 @@
     &:hover {
       opacity: 0.7;
       margin-bottom: 3px;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      display: none;
     }
   }
 }
@@ -139,6 +148,9 @@
       width: 65rem;
       left: -1rem;
     }
+    @media only screen and (max-width: $bp-mobile) {
+      left: -5rem;
+    }
   }
   &--background {
     position: relative;
@@ -176,6 +188,9 @@ p {
     @media only screen and (max-width: $bp-5xs) {
       width: 18.5rem;
     }
+    @media only screen and (max-width: $bp-mobile) {
+      width: 18rem;
+    }
     &:not(:last-child) {
       margin-right: 3rem;
     }
@@ -192,6 +207,9 @@ p {
       width: 22.3rem;
       @media only screen and (max-width: $bp-3xs) {
         font-size: 1.2rem;
+      }
+      @media only screen and (max-width: $bp-mobile) {
+        width: 18rem;
       }
     }
     padding-bottom: 7rem;
@@ -240,6 +258,9 @@ p {
       @media only screen and (max-width: $bp-5xs) {
         width: 18rem;
       }
+      @media only screen and (max-width: $bp-mobile) {
+        height: 35.2rem;
+      }
       &:not(:last-child) {
         margin-right: 4rem;
       }
@@ -260,10 +281,16 @@ p {
           position: relative;
           bottom: 3px;
         }
+        @media only screen and (max-width: $bp-mobile) {
+          font-size: 1.2rem;
+        }
       }
       &--summary {
         margin-left: 2rem;
         padding-bottom: 2rem;
+        @media only screen and (max-width: $bp-mobile) {
+          font-size: 0.55rem;
+        }
       }
     }
   }
@@ -285,6 +312,8 @@ a {
     &--logo {
       display: block;
       margin: 4rem 0 3rem 0;
+      width: 13.9rem;
+      height: 2rem;
     }
     &--icon {
       &:not(:last-child) {
@@ -318,6 +347,9 @@ a {
     flex-direction: column;
     margin-top: 5rem;
     &--btn {
+      box-sizing: content-box;
+      width: 8.74rem;
+      height: auto;
       cursor: pointer;
       margin-bottom: 2rem;
       font-size: 1.3rem;
@@ -351,4 +383,9 @@ a {
   &:hover {
     color: #27a84a;
   }
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
 }
