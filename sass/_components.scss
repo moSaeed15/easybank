@@ -6,6 +6,7 @@
   background-color: var(--color-white);
   position: relative;
   z-index: 11;
+
   &__brand {
     height: 1.7rem;
   }
@@ -16,13 +17,19 @@
     @media only screen and (max-width: $bp-mobile) {
       margin-right: 20rem;
     }
+    @media only screen and (max-width: $mobile-design) {
+      margin-right: 13rem;
+    }
     &--link {
       text-decoration: none;
       margin: 0 1.2rem;
       font-size: 1.3rem;
       color: #7c7c7c;
-      @media only screen and (max-width: $bp-mobile) {
+      @media only screen and (max-width: $mobile-design) {
         margin: 0 2rem;
+      }
+      @media only screen and (max-width: $mobile-design) {
+        margin: 0 2.5rem;
       }
       &:hover {
         margin-top: 2.5rem;
@@ -55,7 +62,7 @@
       opacity: 0.7;
       margin-bottom: 3px;
     }
-    @media only screen and (max-width: $bp-mobile) {
+    @media only screen and (max-width: $mobile-design) {
       display: none;
     }
   }
@@ -69,15 +76,26 @@
   &-text {
     height: 10rem;
     width: 30rem;
+    @media only screen and (max-width: $mobile-design) {
+      width: 40rem;
+    }
     &-title {
       font-size: 3.8rem;
       font-weight: 300;
       margin-bottom: 1.5rem;
+      @media only screen and (max-width: $mobile-design) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 4rem;
+      }
     }
     &-paragraph {
       font-size: 1.2rem;
       color: #7c7c7c;
       line-height: 1.5;
+      @media only screen and (max-width: $mobile-design) {
+        width: 32rem;
+      }
     }
   }
   &--btn {
@@ -102,15 +120,23 @@
       opacity: 0.7;
       margin-top: 2.1rem;
     }
+    @media only screen and (max-width: $mobile-design) {
+      left: 6rem;
+    }
   }
   position: relative;
   right: 6rem;
   bottom: 5rem;
+  @media only screen and (max-width: $mobile-design) {
+    left: 5rem;
+    bottom: 30rem;
+  }
 }
 
 .header__img {
   position: relative;
   text-align: left;
+
   &--foreground {
     position: absolute;
     left: 12rem;
@@ -151,8 +177,13 @@
     @media only screen and (max-width: $bp-mobile) {
       left: -2rem;
       width: 60rem;
-      height: 85rem;
-      top: -11.5rem;
+      height: 83rem;
+      top: -11rem;
+    }
+    @media only screen and (max-width: $mobile-design) {
+      margin-left: 15rem;
+      margin-top: -10.5rem;
+      height: 75rem;
     }
   }
   &--background {
@@ -167,8 +198,24 @@
     }
     @media only screen and (max-width: $bp-mobile) {
     }
+    @media only screen and (max-width: $mobile-design) {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      @media only screen and (max-width: $mobile-design) {
+        display: inline-block;
+        position: relative;
+        width: 89rem;
+        bottom: 19rem;
+        right: 0.5rem;
+        z-index: -2;
+        height: 85rem;
+      }
+    }
   }
 }
+
 p {
   font-size: 1.2rem;
   color: #7c7c7c;
@@ -179,6 +226,20 @@ p {
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
+    @media only screen and (max-width: $mobile-design) {
+      width: 25rem;
+      text-align: center;
+      margin-left: 6rem;
+      font-size: 3.5rem;
+    }
+  }
+  &--paragraph {
+    @media only screen and (max-width: $mobile-design) {
+      width: 28rem;
+      margin-left: 4rem;
+      font-size: 1.6rem;
+      text-align: center;
+    }
   }
 }
 
@@ -207,6 +268,10 @@ p {
       @media only screen and (max-width: $bp-3xs) {
         font-size: 1.8rem;
       }
+      @media only screen and (max-width: $mobile-design) {
+        font-size: 2.2rem;
+        width: 25rem;
+      }
     }
     &__paragraph {
       font-size: 1.35rem;
@@ -217,6 +282,13 @@ p {
       @media only screen and (max-width: $bp-mobile) {
         width: 18rem;
       }
+      @media only screen and (max-width: $mobile-design) {
+        font-size: 1.6rem;
+        width: 36rem;
+        position: relative;
+        right: 10rem;
+        text-align: center;
+      }
     }
     padding-bottom: 7rem;
   }
@@ -226,6 +298,29 @@ p {
     @media only screen and (max-width: $bp-mobile) {
       width: 11.5rem;
     }
+    @media only screen and (max-width: $mobile-design) {
+      width: 10rem;
+      height: auto;
+      margin-left: 3rem;
+    }
+  }
+}
+#api-icon {
+  @media only screen and (max-width: $mobile-design) {
+    width: 10rem;
+    height: auto;
+    margin-left: 1rem;
+  }
+}
+#api-title {
+  @media only screen and (max-width: $mobile-design) {
+    margin-left: 1.5rem;
+  }
+}
+#api-paragraph {
+  @media only screen and (max-width: $mobile-design) {
+    position: absolute;
+    left: 23rem;
   }
 }
 
@@ -234,10 +329,22 @@ p {
     font-weight: 400;
     font-size: 2.8rem;
     margin-bottom: 3rem;
+    @media only screen and (max-width: $mobile-design) {
+      position: relative;
+      left: 27.5rem;
+      font-weight: 500;
+      font-size: 3rem;
+    }
   }
 
   &--box {
     display: flex;
+    @media only screen and (max-width: $mobile-design) {
+      flex-direction: column;
+      margin-bottom: 10rem;
+      align-items: center;
+      width: 79rem;
+    }
     &__content {
       background-color: var(--color-white);
       width: 27rem;
@@ -270,6 +377,13 @@ p {
       @media only screen and (max-width: $bp-mobile) {
         height: 35.2rem;
         width: 17rem;
+      }
+      @media only screen and (max-width: $mobile-design) {
+        width: 25rem;
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+        margin-right: 3rem;
       }
       &:not(:last-child) {
         margin-right: 4rem;
@@ -338,6 +452,14 @@ a {
       }
     }
   }
+  &__list--mobile {
+    display: none;
+    @media only screen and (max-width: $mobile-design) {
+      display: block;
+      margin-right: 5rem;
+      margin-top: 2rem;
+    }
+  }
   &__list {
     margin-top: 4rem;
     &:not(:first-child) {
@@ -348,11 +470,21 @@ a {
         margin-left: -10rem;
       }
     }
+    @media only screen and (max-width: $mobile-design) {
+      display: none;
+    }
+
     &-item {
       font-size: 1.3rem;
       &:not(:last-child) {
         margin-bottom: 1rem;
         font-size: 1.3rem;
+      }
+      @media only screen and (max-width: $mobile-design) {
+        &:not(:last-child) {
+          margin-bottom: 2;
+          text-align: center;
+        }
       }
     }
   }
@@ -385,9 +517,20 @@ a {
         position: relative;
         bottom: 3px;
       }
+      @media only screen and (max-width: $mobile-design) {
+        margin-top: -2rem;
+        position: relative;
+        left: 0.5rem;
+        width: 11rem;
+      }
     }
     &--text {
       color: grey;
+      @media only screen and (max-width: $mobile-design) {
+        position: relative;
+        right: 2rem;
+        padding-bottom: 2rem;
+      }
     }
   }
 }

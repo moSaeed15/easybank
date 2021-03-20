@@ -18,7 +18,10 @@ $bp-3xs: 46.875em; //800px
 $bp-4xs: 39em; //624px
 $bp-5xs: 33.75em; //540px
 $bp-mobile: 29em; //460px
-$mobile-design: 29em; //460px
+$mobile-design: 24.4375em; //390px
+$small-mobile: 22.5em; //360px
+$smallest-mobile: 21em; //360px
+$xs-mobile: 20em;
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +67,21 @@ html {
   }
   @media only screen and (max-width: $bp-mobile) {
     font-size: 29%;
+  }
+  @media only screen and (max-width: $mobile-design) {
+    font-size: 28%;
+  }
+  @media only screen and (max-width: $small-mobile) {
+    font-size: 26%;
+  }
+  @media only screen and (max-width: $small-mobile) {
+    font-size: 26%;
+  }
+  @media only screen and (max-width: $smallest-mobile) {
+    font-size: 25%;
+  }
+  @media only screen and (max-width: $xs-mobile) {
+    font-size: 23.5%;
   }
 }
 
